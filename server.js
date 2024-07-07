@@ -15,7 +15,7 @@ app.use(morgan("dev"));
 // middlewares
 
 // router
-app.use('/api/v1/student',require('./routes/studentRoutes'))
+app.use('/',require('./routes/studentRoutes'))
 
 app.get("/test", (req, res) => {
   res.status(200).send("<h1>Welcome to </h1>");
